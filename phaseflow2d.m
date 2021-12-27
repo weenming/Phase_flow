@@ -1,11 +1,11 @@
-clc,clear
+clear
 
 %微分方程，epsilon是参数
-for i=1:5
-    initialy(1,:) = zeros(1,4)+i;
-end
-initialy = zeros(4,1)+1;
-[t,sol] = ode45(@rotation,[0,10],initialy);
+% for i=1:5
+%     initialy(1,:) = zeros(1,4)+i;
+% end
+% initialy = zeros(4,1)+1;
+% [t,sol] = ode45(@rotation,[0,10],initialy);
 
 %画图
 c=1;
@@ -13,14 +13,14 @@ N = 10;%绘制点数
 px0 = linspace(-1,1,N);
 py0 = linspace(-1,1,N);
 x0 = linspace(0,1,N);
-[px,py]=meshgrid(px0,py0);
+[x,px,py]=meshgrid(x0,px0,py0);
 
-tau = zeros(N,N,4);
+tau = zeros(N,N,N,4);
 for i = 1:N
     for j =1:N
         for k = 1:N
             temptau = unknown(0,[x(1,i,1),0,px(j,1,1),py(1,1,k)]);
-            tau(i,j,k,:) = temptau;
+            tau(j,i,k,:) = temptau;
         end
     end
 end
@@ -28,6 +28,7 @@ tx = c.*tau(:,:,:,1);
 ty = c.*tau(:,:,:,2);
 tpx = c.*tau(:,:,:,3);
 tpy = c.*tau(:,:,:,4);
+figure
 quiver3(x,px,py,tx,tpx,tpy);
 xlabel('x')
 ylabel('px')
