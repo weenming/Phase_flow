@@ -6,7 +6,7 @@
 守恒量和上述两件事不变(对称性)等价(?)，这是Hamilton版本的Noether's Theorem
 
 角动量生成的变换是物理空间的旋转操作；L-P-L矢量生成的变换比较复杂(反正我不会)，所以在这里试着可视化相空间坐标在这个变换下的改变。
-# todo
+# To-Do
 harmonic oscillator 的情况，高维角动量(?)
 # Reference
 [1] 陈童，理论力学讲义
