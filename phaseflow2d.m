@@ -13,9 +13,9 @@ N = 10;%绘制点数
 px0 = linspace(-1,1,N);
 py0 = linspace(-1,1,N);
 x0 = linspace(0,1,N);
-[x,px,py]=meshgrid(x0,px0,py0);
+[px,py]=meshgrid(px0,py0);
 
-tau = zeros(N,N,N,4);
+tau = zeros(N,N,4);
 for i = 1:N
     for j =1:N
         for k = 1:N
