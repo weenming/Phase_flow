@@ -11,7 +11,9 @@ btw matlab这个meshgrid生成的自变量最好当作标量输入求值，因�
 # To-Do
 harmonic oscillator 的情况，高维角动量(?)
 # Reference
-[1] 陈童，理论力学讲义
+[1] 陈童，经典力学新讲
+
+[2] 林志方，经典力学，讲义
 
 [2] Ross C. O’Connell and Kannan Jagannathan, Illustrating dynamical symmetries in classical mechanics: The Laplace–Runge–Lenz
 vector revisited, American Journal of Physics 71, 243 (2003); doi: 10.1119/1.1524165
