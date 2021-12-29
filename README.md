@@ -1,5 +1,5 @@
 # 相流的可视化
-在Kepler问题里，有守恒量：角动量和Lagrange-Rounge-Lenz矢量。它们可以作为一个单参数正则变换簇[1]的生成元。在这个变换下
+在Kepler问题里，有守恒量：角动量和Laplace-Rounge-Lenz矢量。它们可以作为一个单参数正则变换簇[1]的生成元。在这个变换下
 - Hamilton方程的形式不变
 - Hamiltonian不变
 
